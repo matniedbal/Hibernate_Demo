@@ -7,9 +7,9 @@
 	<session-factory>
 
 		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-		<property name="connection.url">jdbc:mysql://localhost:3306/kurs_sql_hibernate?useSSL=false&amp;serverTimezone=UTC</property>
-		<property name="connection.username">matned1</property>
-		<property name="connection.password">hanza666</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/strefakursow?useSSL=false&amp;serverTimezone=UTC</property>
+		<property name="connection.username">mat</property>
+		<property name="connection.password">pass</property>
 
 
 

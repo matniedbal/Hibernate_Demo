@@ -57,13 +57,20 @@ public class HibernateAssociationsMain {
         Long result = (Long) query.getSingleResult();
         query = session.createQuery(sortSmaller);
 
+
         List<String> resultList = query.getResultList();
+        query = session.createQuery(select);
+        List<Company> resultList2 = query.getResultList();
 
         session.getTransaction().commit();
 
         System.out.println("Wartość polskich firm w bazie: " + result +"zł");
 
         for (String c : resultList) {
+            System.out.println(c);
+        }
+
+        for (Company c : resultList2) {
             System.out.println(c);
         }
 
